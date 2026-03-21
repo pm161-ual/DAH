@@ -1,0 +1,41 @@
+/* Custom header styling */
+.custom-header {
+  --background: linear-gradient(135deg, #0e4995 0%, #1a5ab8 50%, #0d3d75 100%);
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  box-shadow: 0 4px 12px rgba(14, 73, 149, 0.3);
+}
+
+.header-content {
+  width: 100%;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+ion-button {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  left: 35%;
+}

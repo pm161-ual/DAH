@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Reservations
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    @for(reservation of reservations; track reservation.id){
+        <ion-item>
+          <ion-label>
+            <h2>{{ reservation.name }}</h2>
+            <p>{{ reservation.date | date:'short' }}</p>
+          </ion-label>
+        </ion-item>
+      }
+  </ion-list>
+</ion-content>

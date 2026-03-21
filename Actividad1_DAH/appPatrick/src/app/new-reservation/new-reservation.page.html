@@ -1,0 +1,26 @@
+<ion-header [translucent]="false">
+  <ion-toolbar class="custom-header">
+    <div class="header-content">
+      <h1 class="header-title">New Reservation</h1>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="form-container">
+  <div class="form-wrapper">
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="reservation.name">
+        <ion-label position="floating">Name</ion-label>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="date" [(ngModel)]="reservation.date">
+        <ion-label position="floating">Date</ion-label>
+      </ion-input>
+    </ion-item>
+    <ion-button  (click)="saveReservation()">Save Reservation</ion-button>
+    <ion-button color="secondary" (click)="goToReservations()">
+      Back to Reservations
+    </ion-button>
+  </div>
+</ion-content>

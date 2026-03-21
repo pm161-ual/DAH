@@ -1,0 +1,76 @@
+ion-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px 8px 0 0;
+}
+
+/* estilo para que las tarjetas de producto sean de tamaño medio y estén centradas */
+ion-grid {
+  ion-col {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+ion-card {
+  max-width: 300px; /* ancho medio */
+  width: 100%;
+  /* asegurar tarjetas con altura uniforme */
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+
+ion-card img {
+  width: 100%;
+  height: 400px; /* altura fija para imágenes */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+ion-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ion-button {
+  color: aliceblue;
+}
+
+/* Custom header styling */
+.custom-header {
+  --background: linear-gradient(135deg, #0e4995 0%, #1a5ab8 50%, #0d3d75 100%);
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  box-shadow: 0 4px 12px rgba(14, 73, 149, 0.3);
+}
+
+.header-content {
+  width: 100%;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}

@@ -1,0 +1,34 @@
+<ion-header [translucent]="false">
+  <ion-toolbar class="custom-header">
+    <div class="header-content">
+      <h1 class="header-title">CLIENTS</h1>
+      <p class="header-subtitle">Manage your clients</p>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="cards-container">
+    @for(client of clients; track client.id){
+      <ion-card class="client-card">
+        <ion-card-header class="card-header">
+          <ion-avatar class="client-avatar">
+            @if(client.image){
+              <img [src]="client.image" alt="Client image">
+            }@else {
+              <ion-icon name="person-circle" size="large"></ion-icon>
+            }
+          </ion-avatar>
+        </ion-card-header>
+        <ion-card-content class="card-content">
+          <h2 class="client-name">{{ client.name }}</h2>
+          <p class="client-email">{{ client.email }}</p>
+          <p class="client-phone">{{ client.phone }}</p>
+          <ion-button expand="block" [routerLink]="['/client', client.id]" class="connect-btn">
+            Detalles
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    }
+  </div>
+</ion-content>
